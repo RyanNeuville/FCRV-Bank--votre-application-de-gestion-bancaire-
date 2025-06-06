@@ -32,13 +32,13 @@
         </a>
         <ul class="side-menu top">
             <li class="active">
-                <a href="dashboard.html">
+                <a href="dashboard">
                     <i class='bx bxs-dashboard bx-sm'></i>
                     <span class="text">Tableau de Board</span>
                 </a>
             </li>
             <li>
-                <a href="accounts.html">
+                <a href="accounts">
                     <i class='bx bxs-credit-card-alt bx-sm'></i>
                     <span class="text">Comptes</span>
                 </a>

@@ -32,31 +32,31 @@
         </a>
         <ul class="side-menu top">
             <li>
-                <a href="dashboard.html">
+                <a href="dashboard">
                     <i class='bx bxs-dashboard bx-sm'></i>
                     <span class="text">Tableau de Board</span>
                 </a>
             </li>
             <li class="active">
-                <a href="accounts.html">
+                <a href="accounts">
                     <i class='bx bxs-credit-card-alt bx-sm'></i>
                     <span class="text">Comptes</span>
                 </a>
             </li>
             <li>
-                <a href="transactions.html">
+                <a href="transactions">
                     <i class='bx bxs-bank bx-sm'></i>
                     <span class="text">Transactions</span>
                 </a>
             </li>
             <li>
-                <a href="investissement.html">
+                <a href="investissement">
                     <i class='bx bx-trending-up bx-sm'></i>
                     <span class="text">Investissement</span>
                 </a>
             </li>
             <li>
-                <a href="clients.html">
+                <a href="clients">
                     <i class='bx bxs-group bx-sm'></i>
                     <span class="text">Services clients</span>
                 </a>

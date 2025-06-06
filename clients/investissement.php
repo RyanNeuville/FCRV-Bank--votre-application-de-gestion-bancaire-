@@ -19,6 +19,7 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/vip.css">
 
     <title>ACCOUNT</title>
 </head>
@@ -32,31 +33,31 @@
         </a>
         <ul class="side-menu top">
             <li>
-                <a href="dashboard.html">
+                <a href="dashboard">
                     <i class='bx bxs-dashboard bx-sm'></i>
                     <span class="text">Tableau de Board</span>
                 </a>
             </li>
             <li>
-                <a href="accounts.html">
+                <a href="accounts">
                     <i class='bx bxs-credit-card-alt bx-sm'></i>
                     <span class="text">Comptes</span>
                 </a>
             </li>
-            <li class="active">
-                <a href="transactions.html">
+            <li>
+                <a href="transactions">
                     <i class='bx bxs-bank bx-sm'></i>
                     <span class="text">Transactions</span>
                 </a>
             </li>
-            <li>
-                <a href="investissement.html">
+            <li class="active">
+                <a href="investissement">
                     <i class='bx bx-trending-up bx-sm'></i>
                     <span class="text">Investissement</span>
                 </a>
             </li>
             <li>
-                <a href="clients.html">
+                <a href="clients">
                     <i class='bx bxs-group bx-sm'></i>
                     <span class="text">Services clients</span>
                 </a>
@@ -131,16 +132,16 @@
             </div>
         </nav>
         <!-- NAVBAR -->
-        <div id="alert" class="z-50 fixed left-0 right-0 mx-auto w-1/2"></div>
+
 
         <!-- MAIN -->
         <main>
             <div class="head-title">
                 <div class="left">
-                    <h1>Mes Transactions</h1>
+                    <h1>Investissements</h1>
                     <ul class="breadcrumb">
                         <li>
-                            <a href="#">Transactions</a>
+                            <a href="#">investissements</a>
                         </li>
                         <li><i class='bx bx-chevron-right'></i></li>
                         <li>
@@ -149,106 +150,148 @@
                     </ul>
                 </div>
             </div>
-            <div>
-
-                <form action="" class="flex gap-4 p-4 md:flex-row flex-col items-center">
-                    <label class="form-control w-full max-w-xs">
-                        <div class="label">
-                            <span class="text-sm text-red-400">Retrait ?</span>
-                        </div>
-                        <select class="select select-bordered" required>
-                            <option disabled selected>Type de transaction</option>
-                            <option>Star Wars</option>
-                            <option>Harry Potter</option>
-                            <option>Lord of the Rings</option>
-                            <option>Planet of the Apes</option>
-                            <option>Star Trek</option>
-                        </select>
-                        <div class="label">
-                            <span class="text-sm text-green-400">Depot ?</span>
-                            <span class="text-sm text-blue-400">Virrement ?</span>
-                        </div>
-                    </label>
-                    <label class="form-control w-full max-w-xs">
-                        <div class="label">
-                            <span class="label-text-alt">Verifier</span>
-                        </div>
-                        <input type="text" placeholder="Montant de la" class="input input-bordered w-full max-w-xs" />
-                        <div class="label">
-                            <span class="label-text-alt">Votre</span>
-                            <span class="label-text-alt">Solde</span>
-                        </div>
-                    </label>
-                    <button class="btn btn-info w-auto">Effectuer</button>
-                </form>
+            <div class="mt-4 mb-4 flex justify-center items-center gap-2">
+                <i class='bx bx-trending-up bx-lg text-green-500'></i>
+                <span>Comment gagne de l'argent ?</span>
             </div>
-            <div class="table-data">
-                <div class="order">
-                    <div class="head">
-                        <h3>Transaction recentes</h3>
-                        <i class='bx bx-search'></i>
-                        <i class='bx bx-filter'></i>
+
+
+            <div class="flex flex-col lg:flex-row justify-center items-stretch gap-4">
+                <div class="flex justify-center items-center">
+                    <ol class="relative text-gray-500 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400">
+                        <li class="mb-10 ms-6">
+                            <span
+                                class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
+                                <svg class="w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                            </span>
+                            <h3 class="font-medium leading-tight">Compte</h3>
+                            <p class="text-sm">Cree Votre compte</p>
+                        </li>
+                        <li class="mb-10 ms-6">
+                            <span
+                                class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
+                                <i class='bx bx-transfer'></i>
+                            </span>
+                            <h3 class="font-medium leading-tight">Transaction</h3>
+                            <p class="text-sm">Effectuer une transaction</p>
+                        </li>
+                        <li class="mb-10 ms-6">
+                            <span
+                                class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
+                                <svg class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                                    <path
+                                        d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z" />
+                                </svg>
+                            </span>
+                            <h3 class="font-medium leading-tight">Choix</h3>
+                            <p class="text-sm">Choisir le plan d'investissement</p>
+                        </li>
+                        <li class="ms-6">
+                            <span
+                                class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
+                                <i class="bx bx-trending-up bx-sm"></i>
+                            </span>
+                            <h3 class="font-medium leading-tight">Investissement</h3>
+                            <p class="text-sm">Valide votre investissement</p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="flex-1 flex justify-center items-stretch mt-8 lg:mt-0">
+                    <div class="card w-full max-w-md bg-base-100 shadow-xl flex flex-col h-full">
+                        <div class="card-body flex flex-col h-full">
+                            <h2 class="card-title">Investissement</h2>
+                            <p class="flex-1">Investir dans notre banque est simple et sécurisé. Vous pouvez choisir
+                                parmi une
+                                variété de plans d'investissement adaptés à vos besoins financiers. Que vous soyez un
+                                investisseur débutant ou expérimenté, nous avons des options pour vous aider à faire
+                                fructifier votre argent.</p>
+                            <div class="card-actions justify-end">
+                                <a href="" class="btn btn-primary">En savoir plus</a>
+                            </div>
+                        </div>
                     </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Numero Compte</th>
-                                <th>Date</th>
-                                <th>Montant</th>
-                                <th>Type</th>
-                                <th>Statut</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p>ACC12973493</p>
-                                </td>
-                                <td>18-10-2025</td>
-                                <td>100500 FCFA</td>
-                                <td>Débit</td>
-                                <td><span class="status completed">Terminer</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>ACC12973494</p>
-                                </td>
-                                <td>01-06-2025</td>
-                                <td>200000 FCFA</td>
-                                <td>Crédit</td>
-                                <td><span class="status pending">echoue</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>ACC12973495</p>
-                                </td>
-                                <td>14-10-2025</td>
-                                <td>150000 FCFA</td>
-                                <td>Débit</td>
-                                <td><span class="status process">En Cours</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>ACC12973496</p>
-                                </td>
-                                <td>01-02-2025</td>
-                                <td>150000 FCFA</td>
-                                <td>Débit</td>
-                                <td><span class="status pending">echoue</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>ACC32383744</p>
-                                </td>
-                                <td>31-10-2025</td>
-                                <td>150000 FCFA</td>
-                                <td>Débit</td>
-                                <td><span class="status completed">Terminer</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                </div>
+
+                <div class="flex-1 flex justify-center items-stretch">
+                    <div class="card w-full max-w-md bg-base-100 shadow-xl flex flex-col h-full">
+                        <div class="card-body flex flex-col h-full">
+                            <h2 class="card-title">Sécurité</h2>
+                            <p class="flex-1">La sécurité de vos investissements est notre priorité. Nous utilisons des
+                                protocoles de
+                                sécurité avancés pour protéger vos données et vos fonds. Notre équipe d'experts
+                                surveille
+                                en permanence les transactions pour garantir un environnement sûr et fiable.</p>
+                            <div class="card-actions justify-end">
+                                <a href="" class="btn btn-primary">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div>
+                <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- VIP1 -->
+                    <div
+                        class="relative rounded-xl shadow-lg p-6 bg-gradient-to-br from-green-100 via-green-50 to-white flex flex-col items-center transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+                        <div class="absolute top-3 right-3">
+                            <span class="animate-pulse text-green-400"><i class="fa-solid fa-leaf"></i></span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bx bxs-crown text-yellow-500 text-4xl drop-shadow"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-green-700 tracking-wide">VIP1</h3>
+                        <p class="text-gray-700 font-semibold mb-1">100 000 FCFA - 999 999 FCFA</p>
+                        <span
+                            class="inline-block bg-green-200 text-green-800 text-xs px-3 py-1 rounded-full mt-2">Débutant</span>
+                        <div class="mt-4 flex items-center gap-2 text-green-600 text-sm">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            <span>Idéal pour commencer</span>
+                        </div>
+                    </div>
+                    <!-- VIP2 -->
+                    <div
+                        class="relative rounded-xl shadow-lg p-6 bg-gradient-to-br from-blue-100 via-blue-50 to-white flex flex-col items-center transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+                        <div class="absolute top-3 right-3">
+                            <span class="animate-bounce text-blue-400"><i class="fa-solid fa-gem"></i></span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bx bxs-diamond text-blue-500 text-4xl drop-shadow"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-700 tracking-wide">VIP2</h3>
+                        <p class="text-gray-700 font-semibold mb-1">1 000 000 FCFA - 3 999 999 FCFA</p>
+                        <span
+                            class="inline-block bg-blue-200 text-blue-800 text-xs px-3 py-1 rounded-full mt-2">Intermédiaire</span>
+                        <div class="mt-4 flex items-center gap-2 text-blue-600 text-sm">
+                            <i class="fa-solid fa-medal"></i>
+                            <span>Boostez vos gains</span>
+                        </div>
+                    </div>
+                    <!-- VIP3 -->
+                    <div
+                        class="relative rounded-xl shadow-lg p-6 bg-gradient-to-br from-purple-100 via-purple-50 to-white flex flex-col items-center transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+                        <div class="absolute top-3 right-3">
+                            <span class="animate-spin text-purple-400"><i class="fa-solid fa-crown"></i></span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bx bxs-star text-purple-500 text-4xl drop-shadow"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-purple-700 tracking-wide">VIP3</h3>
+                        <p class="text-gray-700 font-semibold mb-1">4 000 000 FCFA et plus</p>
+                        <span
+                            class="inline-block bg-purple-200 text-purple-800 text-xs px-3 py-1 rounded-full mt-2">Premium</span>
+                        <div class="mt-4 flex items-center gap-2 text-purple-600 text-sm">
+                            <i class="fa-solid fa-trophy"></i>
+                            <span>Accès exclusif & privilèges</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </main>
         <!-- MAIN -->
     </section>
